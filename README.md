@@ -2,7 +2,12 @@
 ### Typescript tutorial here ---> 
 1. https://medium.com/codewey/mengapa-typescript-9914c7c14793
 2. https://www.tutorialspoint.com/typescript/index.htm
-3. https://www.youtube.com/watch?v=f60iIWQcQ4Q a bit introductions
+
+### About Nodejs --->
+https://www.youtube.com/watch?v=xVMoctB_1Rw
+
+### About Mongodb --->
+https://www.youtube.com/watch?v=O-IfMPAVjXM
 
 ## how to run the project ?
 
