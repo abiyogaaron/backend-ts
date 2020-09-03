@@ -34,3 +34,5 @@
 -  run the database type `mongod`
 -  type `npm start`
 
+![alt text](https://ibb.co/sbR6Dm0)
+
