@@ -14,15 +14,15 @@
 - Mongodb -> https://www.mongodb.com/try/download/community (Version 3.6)
 - robomongo -> https://robomongo.org/download
 
-#### 2. if youre operating system is windows
+#### 2. if youre operating system is windows otherwise skip it
 - Change windows Environment Variable -> https://dangphongvanthanh.wordpress.com/2017/06/12/add-mongos-bin-folder-to-the-path-environment-variable
-- Open `cmder` that we installed before then type `npm install -g ts-node` (install typescript compiler globally) 
-- type `npm install -g typescript` (install the typescript globally)
 
 #### 3. Make a Github Account in here -> https://github.com/ (its a repository for a software / program)
 - make a repository in your github account
 
 #### 4. Open terminal or `cmder` then type
+-  type `npm install -g ts-node` (install typescript compiler globally) 
+-  type `npm install -g typescript` (install the typescript globally)
 -  `git config --global user.name "FIRST_NAME LAST_NAME"`
 -  `git config --global user.email "MY_NAME@example.com"`
 -  `git clone https://github.com/abiyogaaron/backend-ts`
