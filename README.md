@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=O-IfMPAVjXM
 - Mongodb -> https://www.mongodb.com/try/download/community (Version 3.6)
 - robomongo -> https://robomongo.org/download
 
-#### 2. if your operating system is windows otherwise skip it
+#### 2. if your operating system is not a windows otherwise skip it
 - Change windows Environment Variable -> https://dangphongvanthanh.wordpress.com/2017/06/12/add-mongos-bin-folder-to-the-path-environment-variable
 
 #### 3. Make a Github Account in here -> https://github.com/ (its a repository for a software / program)
