@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 routes(app);
 
-// Connect to database
+//Connect to database
 mongoose.connect(config.mongo_uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
