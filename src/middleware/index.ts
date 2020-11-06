@@ -8,14 +8,15 @@ export const isAuthenticated = async (req: Request, res: Response, next: NextFun
     const token = req.headers.authorization || '';
 
     try{
-      const decoded = await jwt.verify(token, config.secret_key);
-      if(decoded.hasOwnProperty('data')){
-        next();
+      if(token){
+        const decoded = await jwt.verify(token, config.secret_key);
+        if(decoded.hasOwnProperty('data')){
+          next();
+        }
       }
-      return res.status(401).json({message: "Unauthorized !"});
+      return res.status(403).json({message: "Forbidden Request !"});
     }catch(err){
-      console.log("----middleware-err----\n", err);
-      return res.status(500).json({message: "middleware error !"});
+      return res.status(500).json(err);
     }
   }
   return res.status(401).json({message: "Unauthorized !"});

@@ -2,6 +2,8 @@ import { Document, model, Schema} from "mongoose"
 
 interface IUserSchema extends Document{
   nim: string;
+  password: string;
+  salt: string;
   name: string;
   score: number;
   class: string;
@@ -13,19 +15,30 @@ const UserSchema = new Schema({
   nim: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
+    trim: true
+  },
+  password: {
+    type: String,
+    required: true,
+    trim: true,
+    minlength: 6
+  },
+  salt:{
+    type: String,
   },
   name: {
     type: String,
-    required: true
+    required: true,
+    trim: true
   },
   score: {
-    type: Number,
-    required: true
+    type: Number
   },
   class: {
     type: String,
-    required: true
+    required: true,
+    trim: true
   },
   created: {
     type: Date,
@@ -34,7 +47,7 @@ const UserSchema = new Schema({
   updated: Date
 })
 
-UserSchema.pre<IUserSchema>("save", function(next){  
+UserSchema.pre<IUserSchema>("save", function(next){
   if(!this.isNew){
     this.updated = new Date();
   }
