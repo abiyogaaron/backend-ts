@@ -13,8 +13,8 @@ let userRouter = express.Router();
 
 userRouter.post('/register', register);
 userRouter.post('/signin', signin);
-userRouter.get('/', index);
-userRouter.put('/:id', update);
-userRouter.delete('/:id', remove);
+userRouter.get('/', middleware.isAuthenticated, index);
+userRouter.put('/:id', middleware.isAuthenticated, update);
+userRouter.delete('/:id', middleware.isAuthenticated, remove);
 
 export default userRouter;
